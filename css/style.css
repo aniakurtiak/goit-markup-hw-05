@@ -6,6 +6,7 @@
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
     --accent-color: #404BBF;
+    --bag-gr: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 
 /* Resetting default styles */
@@ -154,15 +155,18 @@ body {
     color: var(--accent-color);
 }
 
-
-
 /* ============ /HEADER ============ */
 
 /* ============ HERO ============ */
 .hero {
     background: var(--title-text-color);
+    background-image: var(--bag-gr),
+        url(../images/page-1/hero-bg.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -247,9 +251,7 @@ body {
 .team-list {
     display: flex;
     gap: 24px;
-
 }
-
 
 .team-text {
     margin-top: 8px;
@@ -261,7 +263,37 @@ body {
     border-radius: 0px 0px 4px 4px;
     padding: 32px 16px;
     text-align: center;
+}
 
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.soc-item {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.soc-link:is(:hover, :focus) {
+    background-color: #404BBF;
 }
 
 /* *=============/TEAM======================== */
