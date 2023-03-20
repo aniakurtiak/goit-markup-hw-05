@@ -405,7 +405,7 @@ body {
     gap: 24px;
 }
 
-.customers-item {
+.customers-link {
     width: 168px;
     height: 88px;
     border: 1px solid #8E8F99;
@@ -418,28 +418,16 @@ body {
 .customers-icon {
     width: 104px;
     height: 56px;
-}
-
-.customers-item:hover {
-    border: 1px solid #404BBF;
-}
-
-.customers-icon {
     fill: #8E8F99;
 }
 
-.customers-icon:hover {
-    fill: #404BBF;
+.customers-link:is(:hover, :focus) {
+    border: 1px solid #404BBF;
 }
 
-/* .customers-icon:is(:hover, :focus) {
-    fill: #404BBF;
-} */
-
-.customers-item:hover .customers-icon {
+.customers-link:is(:hover, :focus) .customers-icon {
     fill: #404BBF;
 }
-
 
 /** ============ FOOTER ============= */
 .ftr-text {
