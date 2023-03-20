@@ -162,6 +162,8 @@ body {
     background: var(--title-text-color);
     background-image: var(--bag-gr),
         url(../images/page-1/hero-bg.jpg);
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
     background-position: center;
@@ -218,16 +220,10 @@ body {
 
 .benefits-title.secondary-title {
     text-align: left;
+    margin-top: 8px;
 }
 
-.bnf-icon-list {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 8px;
-
-}
-
-.bnf-icon-item {
+.bnf-icon-wrap {
     width: 264px;
     height: 112px;
     background: #F4F4FD;
@@ -473,7 +469,6 @@ body {
 .ftr-soc-list {
     display: flex;
     gap: 16px;
-    margin-left: 120px;
     justify-content: center;
 }
 
@@ -504,10 +499,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    margin-left: 120px;
     margin-bottom: 16px;
 }
 
 .ftr-soc-link:is(:hover, :focus) {
     background-color: #31D0AA;
+}
+
+.ftr-soc-media {
+    margin-left: 120px;
 }
