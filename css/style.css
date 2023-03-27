@@ -135,6 +135,10 @@ body {
     color: var(--accent-color);
 }
 
+.menu-item {
+    position: relative;
+}
+
 .current.menu-link::after {
     content: '';
     display: block;
