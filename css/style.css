@@ -119,6 +119,7 @@ body {
 .menu {
     display: flex;
     gap: 40px;
+    position: relative;
 }
 
 .menu-link {
@@ -132,6 +133,19 @@ body {
 
 .menu-link:is(:hover, :focus) {
     color: var(--accent-color);
+}
+
+.current.menu-link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    transform: translateY(-125%);
+    width: 100%;
+    height: 4px;
+    top: 44px;
+    left: 0;
+    background: #404BBF;
+    border-radius: 2px;
 }
 
 /* Contacts */
