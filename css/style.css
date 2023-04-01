@@ -583,6 +583,7 @@ body {
     min-height: 576px;
     background-color: #FCFCFC;
     transition: transform var(--transition-dur-func);
+    padding: 24px;
 }
 
 .backdrop.is-hidden .modal-window {
@@ -623,3 +624,38 @@ body {
 .no-scroll {
     overflow: hidden;
 }
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    margin-top: 48px;
+    margin-bottom: 34px;
+}
+
+.modal-input {
+    width: 100%;
+    margin-bottom: 26px;
+    height: 40px;
+}
+
+.modal-t-area {
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 8px;
+    resize: none;
+}
+
+.modal-t-area::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-form-btn {}
+
+/* ============ /MODAL-WINDOW ============= */
